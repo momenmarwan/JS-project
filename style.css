@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   background-color: #a2d594;
+   font-family: system-ui;
+
+   
+}
+.main{
+   
+    height: 100px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+ input{
+    border-radius: 50px;
+    padding: 6px;
+    outline: none;
+    border: 1px solid #000;
+    width:40%;
+    height: 40px;
+}
+.head{
+    width: 400px;
+    height: 50px;
+    background-color: #928cff;
+    border-radius: 50px;
+    color: #fff;
+    text-align: center;
+}
+ button{
+    background-color: #928cff;
+    color: #fff;
+    border-radius: 50px;
+    border-width: 0;
+    box-shadow: rgba(25,25,25,.04) 0 0 1px 0,rgba(0,0,0,.1) 0 3px 4px 0;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Arial,sans-serif;
+    font-size: 1em;
+    height: 50px;
+    padding: 0 25px;
+    transition: all 200ms;
+}
+.contanier .cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+.contanier .cards .card{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: #928cff;
+    opacity: 0.8;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    text-align: center;
+}
+.contanier .cards .card span{
+    font-weight: 600;
+    font-size: 22px;
+}
+.delete i{
+    font-size: 30px;
+    color: red;
+    
+}
+.contanier .cards .card button{
+    position: absolute;
+    background-color: #fff;
+    color: #000;
+    width: 80%;
+    border-radius: 7px;
+    padding: 9px 15px;
+    font-weight: 600;
+    border: none;
+    top: 220px;
+    left:30px;
+}
+
+.contanier .cards .card::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% ;
+    height: 30%;
+    border-radius: 20px;
+    background-color: #fff;
+    z-index: -20;
+    
+}
